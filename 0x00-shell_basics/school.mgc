@@ -1,1 +1,13 @@
-0 string SCHOOL School data file
+#!/bin/bash
+
+# Create a plain text magic file (school.magic)
+echo "0 string SCHOOL School data" > school.magic
+
+# Compile the plain text magic file into the binary magic format (school.mgc)
+file -C -m school.mgc school.magic
+
+# Clean up the plain text magic file
+rm school.magic
+
+# Verify the magic file was created
+ls -la
