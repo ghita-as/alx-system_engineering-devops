@@ -1,4 +1,5 @@
- Bash script that accepts one argument
-# The script run the 'whoami' command under the user passed as an argument
+#!/usr/bin/env bash
+# runs the whoami command under the user passed as an argument
 
+# Use 'sudo' to switch to the specified user and then run 'whoami'
 sudo -u "$1" whoami
